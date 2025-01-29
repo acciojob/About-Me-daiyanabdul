@@ -1,1 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
+        .profile-container {
+            display: flex;
+            background-color: white;
+            width: 800px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Profile Picture and Info Section */
+        .profile-header {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .profile-picture {
+            margin-right: 20px;
+        }
+
+        .profile-picture img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-info p {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 16px;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            margin-bottom: 20px;
+        }
+
+        .skills-section h2 {
+            margin-bottom: 35px;
+			padding-top:40px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .skill {
+            margin-bottom: 15px;
+			
+        }
+
+        .skill-name {
+
+            color: #333;
+        }
+
+        .skill-percentage {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+			text-align:right;
+        }
+
+        .skill-bar {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 10px;
+        }
+
+        .skill-level {
+            background-color: #007bff;
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        /* About Me Section */
+        .about-me {
+            flex: 1;
+            margin-left: 20px;
+			padding-left:25px;
+        }
+.about-me h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+  position: relative; /* for positioning the pseudo-element */
+}
+
+.about-me h2::after {
+  content: '';
+  position: absolute;
+  bottom: -5px; /* distance between text and underline */
+  left: 0;
+  width: calc(100% - 300px); /* Adjust this to stop at the "m" */
+  border-bottom: 2px solid blue;
+}
+	
+
+        .about-me p {
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <!-- Left Section: Profile Picture, Info, and Skills -->
+        <div class="left-section">
+            <!-- Profile Picture and Info -->
+            <div class="profile-header">
+                <div class="profile-picture">
+                    <img src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/b8776820-1a08-4ac3-b158-df1fe7adacfd/40b0024d-9912-4219-9970-490b48def4a4.png" alt="Profile Picture">
+                </div>
+                <div class="profile-info">
+                    <p><strong>Name:</strong> Shubham Bhola</p>
+                    <p><strong>Profile:</strong> Software Developer</p>
+                    <p><strong>Email:</strong> abcdef796@gmail.com</p>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills-section">
+                <h2>Skills</h2>
+                <div class="skill">
+                    <div class="skill-name">REACT</div>
+                    <div class="skill-percentage">95%</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">NODEJS</div>
+                    <div class="skill-percentage">90%</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">C/C++</div>
+                    <div class="skill-percentage">99%</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 99%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">AWS</div>
+                    <div class="skill-percentage">93%</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 93%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section: About Me -->
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>I am a Self-starter with a passion to adapt and evangelise new technologies. I have a passion for software development with a diverse skillset ranging from the MERN stack to a stronghold on data structures and algorithms. I like to tackle complex challenges head-on to deliver technically sound solutions with optimum efficiency.</p>
+      <p>and honest efforts to enhance my skills in order to contribute to the growth of society. I believe that magic is possible with a blend of imagination, hard-work and passion. Most of all, I believe in determination</p>
+		</div>
+    </div>
+</body>
+</html>
